@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+            #m{
+               height: 50px;
+               width: 900px;
+               background-color: rgba( 123,  134,  232,  .8);
+               margin: 0px auto;
+            }
+            #m ul{
+                list-style: none;
+            }
+            #m ul li{
+                height: 45px;
+                width: 110px;
+                text-align: center;
+                line-height: 40px;
+                color: white;
+                float: left;
+                transform: translateY(4px);
+                 
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            #m ul ul{
+                margin: 2px 0px 0px -40px;
+                display: none;
+               
+            }
+            #m ul ul li{
+                background-color: rgba( 123,  134,  232,  .8);
+                
+            }
+            #m  ul li:hover ul{
+                transition: all 0.5s;
+                display: block;
+            }
+            #a{
+                background-color: rgba( 123,  134,  232,  .8);
+                color: white;
+            }
+            #a li{
+                position: relative;
+                left: 110px;
+                top: -40px;
+                display: none;
+            }
+            #b:hover #a li{
+                display: block;
+                transition: all 1s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="m">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">GALLERY
+                    <ul>
+                        <li>Image</li>
+                        <li>Video</li>
+                        <li id="b">Audio
+                            <ul id="a">
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </a></li>
+                <li><a href="">REGISTER</a></li>
+                <li><a href="">LOGIN</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
