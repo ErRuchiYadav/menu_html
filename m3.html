@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <style>
+            #o{
+                height: 60px;
+                width: 80%;
+                background-color: rgb(88, 163, 104);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .c{
+                float: left;
+                text-align: center;
+                 width: 16%;
+                height: 60px;
+                color: white;
+                line-height: 60px; 
+            }
+            #b{
+                float: left;
+                width: 35%;
+                 
+             }
+            input{
+                width: 100%;
+                height: 52px;
+                background-color: rgb(38, 99, 56);
+                margin: 4px;
+                border: none;
+                padding-left: 5px;
+            }
+            ::placeholder{
+                color: white;
+            }
+            #s{
+                height: 60px;
+                width: 80%;
+                margin: 10% 20%;
+                background-color: rgb(88, 163, 104); 
+            }
+            
+            #s div{
+                float: left;
+                height: 60px;
+                width: 16.6%;
+                line-height: 60px;
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                z-index: 1;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            #s div:hover{
+                background-color: rgb(8, 33, 41);
+            }
+             
+            #r div{
+                color: white;
+                background-color: rgb(8, 33, 41);
+                height: 60px;
+                width:  185%;
+                text-align: start;
+                padding-left: 15px;
+                display: none;
+            }
+            #r div:hover{
+                background-color: rgb(47, 51, 82);
+            }
+            #r:hover  .x{
+                display: block;
+                transition: all 1s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="o">
+            <div class="c">Portfolio</div>
+            <div class="c">Product</div>
+            <div class="c">Blog</div>
+            <div class="c">contact</div>
+            <div id="b"><input type="search" placeholder="Search"></div>
+        </div>
+        <div id="s">
+            <div><a href="#">Home</a></div>
+            <div id="r"><a href="#">About ▼ 
+                <div class="x">Dropdown</div>
+                <div class="x">Multi-Level Links   <span style="text-align: right;">► </span></div>
+                <div class="x">More Links...</div></a>
+            </div>
+            <div><a href="#">Portfolio</a></div>
+            <div><a href="#">Product</a></div>
+            <div><a href="#">Blog</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+    </body>
+</html>
